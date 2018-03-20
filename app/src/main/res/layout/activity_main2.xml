@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_main2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#111f26">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/feedbackicon" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:text="Any Feedback/Suggestion?"
+                android:textColor="#FFD1DDDD"
+                android:textSize="35dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/textName"
+                android:layout_toEndOf="@+id/textName" />
+
+            <TextView
+                android:id="@+id/textSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/textTitle"
+                android:layout_marginTop="10dp"
+                android:text="Your feedback/suggestion is valuable to us. We hope it will make MoneyU become more awesome☺︎"
+                android:textColor="#FFb1b1b1" />
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/textSubtitle"
+                android:layout_marginTop="20dp"
+                android:text="Your name:"
+                android:textColor="#FFb1b1b1" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textName"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style"
+                android:gravity="top|left"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/textEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/editName"
+                android:layout_marginTop="20dp"
+                android:text="Your email:"
+                android:textColor="#FFb1b1b1" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textEmail"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style"
+                android:gravity="top|left"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/textFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/editEmail"
+                android:layout_marginTop="20dp"
+                android:text="Your feedback/suggestion:"
+                android:textColor="#FFb1b1b1" />
+
+            <EditText
+                android:id="@+id/editFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textFeedback"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style"
+                android:gravity="top|left"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/send"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@android:drawable/ic_menu_send" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">微信文件</string>
+    <string-array name="wechat_functions">
+        <item>微信下载</item>
+        <item>微信接收或保存的图片</item>
+    </string-array>
+</resources>
